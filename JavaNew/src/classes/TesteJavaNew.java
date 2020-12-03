@@ -33,7 +33,9 @@ public class TesteJavaNew {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		
-		//AtualizaÁ„o na classe
+		//Atualiza√ß√£o na classe
+		//Atualiza√ß√£o via git
+		
 		
 		//ZoomService zs = new ZoomService();
 		//String urlZoom = null;
@@ -76,7 +78,7 @@ public class TesteJavaNew {
 				System.out.println("========== FIM ==========");
 			}
 		}else {
-			System.out.println("N„o existem turmas disponÌveis");
+			System.out.println("N√£o existem turmas dispon√≠veis");
 		}
 		
 		
@@ -90,12 +92,12 @@ public class TesteJavaNew {
 		
 		try {
 			
-			System.out.println("Enviando MatrÌcula ao CS");
+			System.out.println("Enviando Matr√≠cula ao CS");
 			retorno = service.sendMatricula(alunoMatricula);
 			System.out.println("Retorno do CS: "+retorno.getTexto());
 			
 		} catch (Exception e) {
-			System.out.println("Ocorreu um erro na matrÌcula: "+e);
+			System.out.println("Ocorreu um erro na matr√≠cula: "+e);
 		}
 		
 		ServiceClientCS service = new ServiceClientCS();
@@ -110,9 +112,9 @@ public class TesteJavaNew {
 		
 		try {
 			
-			System.out.println("Enviou presenÁa ao CS.");
+			System.out.println("Enviou presen√ßa ao CS.");
 			retorno = service.sendPresenca(alunoPresenca);
-			System.out.println("Retorno da presenÁa no CS: "+retorno.getTexto());
+			System.out.println("Retorno da presen√ßa no CS: "+retorno.getTexto());
 			
 		} catch (Exception e) {
 
@@ -235,7 +237,7 @@ public class TesteJavaNew {
 			System.out.println("===== Funcionario =====");
 			System.out.println("MacId: "+funcionario.getMacId());
 			System.out.println("MacPass: "+funcionario.getMacPass());
-			System.out.println("DescriÁ„o: "+funcionario.getDescricao());
+			System.out.println("Descri√ß√£o: "+funcionario.getDescricao());
 		}
 		
 		List<Matricula> listaMatriculas = pessoa.getListaMatriculas();
@@ -245,7 +247,7 @@ public class TesteJavaNew {
 			matricula.setCarreiras(listaMatriculas.get(i).getCarreiras());
 			
 			System.out.println("===== Matricula =====");
-			System.out.println("InsituiÁ„o: "+matricula.getInstituicao());
+			System.out.println("Insitui√ß√£o: "+matricula.getInstituicao());
 			
 			List<Carreira> listaCarreiras = matricula.getCarreiras();
 			for (int j = 0; j < listaCarreiras.size(); j++) {
@@ -256,7 +258,7 @@ public class TesteJavaNew {
 				
 				System.out.println("\t===== Carreira =====");
 				System.out.println("\tidCarreira: "+carreira.getIdCarreira());
-				System.out.println("\tDescriÁ„o: "+carreira.getDescricaoCarreira());
+				System.out.println("\tDescri√ß√£o: "+carreira.getDescricaoCarreira());
 				
 				List<Semestre> listaSemestres = carreira.getSemestres();
 				for (int k = 0; k < listaSemestres.size(); k++) {
@@ -323,8 +325,8 @@ public class TesteJavaNew {
 							System.out.println("\t\t\t\tacessoMyGuide: "+turma.getAcessoMyguide());
 							System.out.println("\t\t\t\tstatusTurma: "+turma.getStatusTurma());
 							System.out.println("\t\t\t\tstatusMatricula: "+turma.getStatusMatricula());
-							System.out.println("\t\t\t\tboletim 1∫ periodo: "+turma.getBoletimPrimeiroPeriodo());
-							System.out.println("\t\t\t\tboletim 1∫ periodo: "+turma.getBoletimSegundoPeriodo());
+							System.out.println("\t\t\t\tboletim 1¬∫ periodo: "+turma.getBoletimPrimeiroPeriodo());
+							System.out.println("\t\t\t\tboletim 1¬∫ periodo: "+turma.getBoletimSegundoPeriodo());
 							
 							List<Instrutor> listaInstrutores = turma.getListaInstrutores();
 							for (int n = 0; n < listaInstrutores.size(); n++) {
