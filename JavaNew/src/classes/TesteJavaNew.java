@@ -33,6 +33,8 @@ public class TesteJavaNew {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		
+		//Atualização na classe
+		
 		//ZoomService zs = new ZoomService();
 		//String urlZoom = null;
 		/*HubspotService hubSpot = new HubspotService();
